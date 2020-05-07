@@ -16,7 +16,7 @@ services:
     build: .
     container_name: myphp-fpm2
     volumes:
-      - ./www/:/var/www/html/:ro
+      - ./www/:/var/www/html/:rw
       - ./conf/php/php.ini:/usr/local/etc/php/php.ini:ro
       - ./log/php-fpm/:/var/log/php-fpm/:rw
     links:
