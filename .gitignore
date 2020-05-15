@@ -2,3 +2,4 @@ www/
 log/
 mysql/
 conf.d/
+.DS_Store

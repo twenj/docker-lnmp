@@ -11,10 +11,11 @@ services:
       - ./conf/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
       - ./log/nginx/:/var/log/nginx/:rw
     links:
-      - php-fpm56:php
-  php-fpm56:
-    image: twenj/lnmp-php56:v1 
-    container_name: myphp-fpm56
+      - php-fpm54:php
+
+  php-fpm54:
+    image: twenj/lnmp-php54:v2
+    container_name: myphp-fpm54
     volumes:
       - ./www/:/var/www/html/:rw
       - ./conf/php/php.ini:/usr/local/etc/php/php.ini:ro
